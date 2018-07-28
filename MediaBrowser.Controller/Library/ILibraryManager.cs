@@ -553,5 +553,10 @@ namespace MediaBrowser.Controller.Library
         void AddExternalSubtitleStreams(List<MediaStream> streams,
             string videoPath,
             string[] files);
-    }
+
+		//myproduction-change-start
+		//Added LibraryStatistics
+		Model.Library.LibraryStatistics Statistics { get; set; }
+		//myproduction-change-end
+	}
 }
