@@ -232,9 +232,7 @@ namespace MediaBrowser.Controller.Library
 
 		//myproduction-change-start
 		event EventHandler<PlaybackProgressEventArgs> ItemDownloaded;
-		event EventHandler<PlaybackProgressEventArgs> ItemStreamedInExternalPlayer;
 		void ReportItemDownloaded(BaseItem item, User user, String clientName, String deviceName);
-		void ReportItemStreamedInExternalPlayer(BaseItem item, User user, String clientName, String deviceName);
 		//myproduction-change-end
 
 		/// <summary>
